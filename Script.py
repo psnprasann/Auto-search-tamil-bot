@@ -1,6 +1,19 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},
-Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ Mᴏᴠɪᴇs, Jᴜsᴛ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ As Aᴅᴍɪɴ Aɴᴅ Eɴᴊᴏʏ 😍</b>"""
+    START_TXT = """<b>✨ Hᴇʟʟᴏ {user}.
+
+Send Your Request Like This 👇
+
+1) Movie Name ✅
+
+       Kantara    
+
+2) Movie Name + Year ✅
+
+       Kantara (2022)
+➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️➖️
+Bro Kantara send me ❌
+
+Kantara movie plz ❌</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
@@ -127,13 +140,7 @@ Nᴀᴍᴇ - {}"""
 
 ᴄʜᴇᴄᴋ ʏᴏᴜʀ sᴘᴇʟʟɪɴɢ ɪɴ ɢᴏᴏɢʟᴇ ᴀɴᴅ ᴛʀʏ ᴀɢᴀɪɴ 😃
 
-ᴍᴏᴠɪᴇ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇
-
-ᴇxᴀᴍᴘʟᴇ : Uncharted or Uncharted 2022 or Uncharted En
-
-ꜱᴇʀɪᴇꜱ ʀᴇǫᴜᴇꜱᴛ ꜰᴏʀᴍᴀᴛ 👇
-
-ᴇxᴀᴍᴘʟᴇ : Loki S01 or Loki S01E04 or Lucifer S03E24
+Please Dont Ask Theater Print Movies
 
 🚯 ᴅᴏɴᴛ ᴜꜱᴇ ➠ ':(!,./)</b>"""
 
@@ -198,11 +205,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}
-╔════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╗
-▫️<a href=https://t.me/TeamHMT_Movie> ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ </a>
-▫️<a href=https://t.me/+aLArXSwMmKlkN2Nl> ʀᴇǫᴜᴇsᴛ ᴍᴏᴠɪᴇs​ </a>
-╚════ ᴊᴏɪɴ ᴡɪᴛʜ ᴜs ════╝</b>""" 
+    CAPTION = """<b>📂Fɪʟᴇɴᴀᴍᴇ : {file_name}</b>""" 
 
     IMDB_TEMPLATE_TXT = """
 <b>Query: {qurey}
