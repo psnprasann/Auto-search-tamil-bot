@@ -905,13 +905,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
 
             await log_msg.reply_text(
                 text=f"Usᴇʀ ID: {user_id}\n\nUsᴇʀ Nᴀᴍᴇ: {username} 𝐅𝐢𝐥𝐞 𝐍𝐚𝐦𝐞: {fileName}",
-                quote=True,
+                quote=False,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fast Download ⚡", url=stream_link),
                                                     InlineKeyboardButton('🎥 Stream/Watch online', url=page_link)]]))
             return await query.message.reply_text(
                 text="<b>Sᴛʀᴇᴀᴍ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇᴅ...😁</b>",
-                quote=True,
+                quote=False,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fast Download ⚡", url=stream_link),
                                                     InlineKeyboardButton('🎥 Stream/Watch online', url=page_link)]]))
