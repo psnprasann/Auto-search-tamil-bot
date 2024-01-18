@@ -189,13 +189,13 @@ async def next_page(bot, query):
                     ],
                 )
     except KeyError:
-        await save_group_settings(query.message.chat.id, 'max_btn', True)
-        if 0 < offset <= 10:
+        await save_group_settings(query.message.chat.id, 'max_btn', False)
+        if 0 < offset <= 1000000:
             off_set = 0
         elif offset == 0:
             off_set = None
         else:
-            off_set = offset - 10
+            off_set = offset - 1000000
         if n_offset == 0:
             btn.append(
                 [InlineKeyboardButton("⌫ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
@@ -1733,7 +1733,7 @@ async def auto_filter(client, msg, spoll=False):
                     [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
                 )
         except KeyError:
-            await save_group_settings(message.chat.id, 'max_btn', True)
+            await save_group_settings(message.chat.id, 'max_btn', False)
             btn.append(
                 [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
             )
