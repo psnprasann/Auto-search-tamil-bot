@@ -317,7 +317,7 @@ async def start(client, message):
                     InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('Download Fast', callback_data=f'gen_stream_link:{file_id}')
+                                InlineKeyboardButton('Channel', url=CHNL_LNK)
                             ]
                         ]
                     )
@@ -389,7 +389,7 @@ async def start(client, message):
                     InlineKeyboardMarkup(
                         [
                             [
-                                InlineKeyboardButton('Download Fast', callback_data=f'gen_stream_link:{file_id}')
+                                InlineKeyboardButton('Channel', url=CHNL_LNK)
                             ]
                         ]
                     )
@@ -460,7 +460,7 @@ async def start(client, message):
             InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('Download Fast', callback_data=f'gen_stream_link:{file_id}')
+                        InlineKeyboardButton('Channel', url=CHNL_LNK)
                     ]
                 ]
             )
